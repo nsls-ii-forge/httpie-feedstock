@@ -21,10 +21,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python !=3.7.10,!=3.8.10,!=3.9.5
     - pip
   run:
-    - python
+    - python !=3.7.10,!=3.8.10,!=3.9.5
     - colorama >=0.2.4  # [win]
     - pygments >=2.5.2
     - requests >=2.22.0

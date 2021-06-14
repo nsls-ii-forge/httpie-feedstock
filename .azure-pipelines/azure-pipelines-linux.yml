@@ -5,19 +5,19 @@
 jobs:
 - job: linux
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_python3.7.9:
-        CONFIG: linux_64_python3.7.9
+      linux_64_python3.7:
+        CONFIG: linux_64_python3.7
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
-      linux_64_python3.8.8:
-        CONFIG: linux_64_python3.8.8
+      linux_64_python3.8:
+        CONFIG: linux_64_python3.8
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
-      linux_64_python3.9.4:
-        CONFIG: linux_64_python3.9.4
+      linux_64_python3.9:
+        CONFIG: linux_64_python3.9
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
   timeoutInMinutes: 360
